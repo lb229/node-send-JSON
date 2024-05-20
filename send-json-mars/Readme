@@ -1,0 +1,21 @@
+$ node 04-03-server-json.mjs
+Server running at http://localhost:3000 
+request received
+
+
+curl -v localhost:3000/
+*   Trying [::1]:3000...
+* Connected to localhost (::1) port 3000
+> GET / HTTP/1.1
+> Host: localhost:3000
+> User-Agent: curl/8.4.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+< Date: Tue, 14 May 2024 18:46:00 GMT
+< Connection: keep-alive
+< Keep-Alive: timeout=5
+< Content-Length: 19
+<
+{"location":"Mars"}* Connection #0 to host localhost left intact
